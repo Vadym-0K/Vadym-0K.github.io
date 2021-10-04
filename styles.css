@@ -5,13 +5,81 @@
 
 #octocat {
   display: block;
-  width:350px;
+  width:450px;
   margin: 50px auto;
+}
+
+section0 {
+     display: block;
+     margin: 50px auto;
+     height: 210px;
+}
+section1:hover {
+     background-color: #25b076;
+}
+
+section1 {
+     display: block;
+     background-color: #3fa63c;
+     height: 1000px auto;
+}
+section2:hover {
+     background-color: #e8a9e4;
+}
+section2 {
+     display: block;
+     background-color: #e8a9a9;
+     height: 1000px auto;
 }
 
 p {
   display: block;
-  width: 400px;
+  width: 600px;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  color: #134514;
+}
+px50{ display: block; height: 1px}
+
+p1 {
+  display: block;
+  width: 1000px;
+  margin: 30px auto;
+  font: 25px Monaco,"Source Code Pro",monospace;
+  color: white;
+}
+p2 {
+  display: block;
+  width: 1000px;
+  margin: 30px auto;
+  font: 25px Monaco,"Source Code Pro",monospace;
+  color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #f2ecea;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #776a66;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #668c6b;
+  color: white;
 }
