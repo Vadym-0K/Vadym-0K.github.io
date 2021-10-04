@@ -165,7 +165,7 @@ p3 {
 
      p {
        display: block;
-       width: 480px;
+       width: 420px;
        margin: 50px auto;
        font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
        color: #134514;
@@ -174,21 +174,21 @@ p3 {
 
      p1 {
        display: block;
-       width: 450px;
+       width: 420px;
        margin: 25px auto;
        font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
        color: white;
      }
      p2 {
        display: block;
-       width: 450px;
+       width: 420px;
        margin: 30px auto;
        font: 25px Monaco,"Source Code Pro",monospace;
        color: #00ff44;
      }
      p3 {
        display: block;
-       width: 450px;
+       width: 420px;
        margin: 16px auto;
        font: 16px Monaco,"Source Code Pro",monospace;
        color: white;
