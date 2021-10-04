@@ -10,22 +10,20 @@
 }
 
 section0 {
+     background-image: url(images/mountain_light.png);
+     background-size: cover;
+     background-attachment: fixed;
      display: block;
-     margin: 50px auto;
-     height: 210px auto;
-}
-section1:hover {
-     background-color: #316651;
+     margin: auto;
+     height: 1080px ;
 }
 
 section1 {
      display: block;
-     background-color: #3fa63c;
+     background-color: #d9cd82;
      height: 1000px auto;
 }
-section2:hover {
-     background-color: #e8a9e4;
-}
+
 section2 {
      display: block;
      background-color: #e8a9a9;
@@ -43,9 +41,9 @@ px50{ display: block; height: 1px}
 
 p1 {
   display: block;
-  width: 1000px;
+  width: 600px;
   margin: 30px auto;
-  font: 25px Monaco,"Source Code Pro",monospace;
+  font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   color: white;
 }
 p2 {
@@ -53,87 +51,71 @@ p2 {
   width: 1000px;
   margin: 30px auto;
   font: 25px Monaco,"Source Code Pro",monospace;
-  color: black;
+  color: #614739;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #f2ecea;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  color: #776a66;
-  text-align: center;
-  padding: 14px 100px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #668c6b;
-  color: white;
-}
 
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+     * {
+       margin:0px;
+       padding:0px;
+     }
+
      #octocat {
-      display: block;
-      width:300px;
-      margin: 50px auto;
-    }
+       display: block;
+       width:450px;
+       margin: 50px auto;
+     }
 
-    section0 {
-         display: block;
-         margin: 50px auto;
-         height: 210px auto;
-    }
+     section0 {
+          background-image: url(images/mountain_light.png);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          display: block;
+          margin: auto;
+          height: 500px ;
+     }
 
-    section1 {
-         display: block;
-         background-color: #3fa63c;
-         height: 1000px auto;
-    }
-    section2 {
-         display: block;
-         background-color: #e8a9e4;
-         height: 1000px auto;
-    }
+     section1 {
+          display: block;
+          background-color: #d9cd82;
+          height: 1000px auto;
+          width: 480px auto;
+     }
 
-    p {
-      display: block;
-      width: 400px ;
-      margin: 30px auto;
-      font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-      color: #134514;
-      word-wrap: normal;
-    }
-    px50{ display: block; height: 1px}
+     section2 {
+          display: block;
+          background-color: #e8a9a9;
+          height: 1000px auto;
+          width: 480px auto;
+     }
 
-    p1 {
-      display: block;
-      width: 400px;
-      margin: 30px auto;
-      font: 15px Monaco,"Source Code Pro",monospace;
-      color: white;
-    }
-    p2 {
-      display: block;
-      width: 400;
-      margin: 30px;
-      font: 15px Monaco,"Source Code Pro",monospace;
-      color: black;
-    }
+     p {
+       display: block;
+       width: 480px;
+       margin: 50px auto;
+       font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+       color: #134514;
+     }
+     px50{ display: block; height: 1px}
+
+     p1 {
+       display: block;
+       width: 480px auto;
+       margin: 15px ;
+       font: 40px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+       color: white;
+     }
+     p2 {
+       display: block;
+       width: 480px;
+       margin: 30px auto;
+       font: 15px Monaco,"Source Code Pro",monospace;
+       color: #614739;
+     }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
