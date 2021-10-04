@@ -9,6 +9,31 @@
   margin: 50px auto;
 }
 
+#mail {
+     alt="on"
+}
+
+a:link {
+  color: #a3e3f0;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #bda9d4;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 section0 {
      background-image: url(images/mountain_light.png);
      background-size: cover;
@@ -20,13 +45,18 @@ section0 {
 
 section1 {
      display: block;
-     background-color: #d9cd82;
+     background-color: #393340;
      height: 1000px auto;
+     background-image: url(images/cyber_city_dark.png);
+     background-size: cover;
+     background-blend-mode:darken;
+     background-attachment: fixed;
+     backface-visibility: visible;
 }
 
 section2 {
      display: block;
-     background-color: #e8a9a9;
+     background-color: #404347;
      height: 1000px auto;
 }
 
@@ -51,7 +81,14 @@ p2 {
   width: 1000px;
   margin: 30px auto;
   font: 25px Monaco,"Source Code Pro",monospace;
-  color: #614739;
+  color: #00ff44;
+}
+p3 {
+  display: block;
+  width: 1000px;
+  margin: 30px auto;
+  font: 25px Monaco,"Source Code Pro",monospace;
+  color: white;
 }
 
 
