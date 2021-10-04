@@ -12,10 +12,10 @@
 section0 {
      display: block;
      margin: 50px auto;
-     height: 210px;
+     height: 210px auto;
 }
 section1:hover {
-     background-color: #25b076;
+     background-color: #316651;
 }
 
 section1 {
@@ -82,4 +82,66 @@ p2 {
 .topnav a.active {
   background-color: #668c6b;
   color: white;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+     #octocat {
+      display: block;
+      width:300px;
+      margin: 50px auto;
+    }
+
+    section0 {
+         display: block;
+         margin: 50px auto;
+         height: 210px auto;
+    }
+
+    section1 {
+         display: block;
+         background-color: #3fa63c;
+         height: 1000px auto;
+    }
+    section2 {
+         display: block;
+         background-color: #e8a9e4;
+         height: 1000px auto;
+    }
+
+    p {
+      display: block;
+      width: 400px ;
+      margin: 30px auto;
+      font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+      color: #134514;
+      word-wrap: normal;
+    }
+    px50{ display: block; height: 1px}
+
+    p1 {
+      display: block;
+      width: 400px;
+      margin: 30px auto;
+      font: 15px Monaco,"Source Code Pro",monospace;
+      color: white;
+    }
+    p2 {
+      display: block;
+      width: 400;
+      margin: 30px;
+      font: 15px Monaco,"Source Code Pro",monospace;
+      color: black;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*Insert your tablet CSS in here!
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    /*Insert your mobile CSS in here!*/
 }
