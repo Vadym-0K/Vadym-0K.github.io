@@ -75,18 +75,19 @@ p1 {
   margin: 30px auto;
   font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   color: white;
+
 }
 p2 {
   display: block;
-  width: 1000px;
-  margin: 30px auto;
+  width: 700px ;
+  margin: 50px auto;
   font: 25px Monaco,"Source Code Pro",monospace;
   color: #00ff44;
 }
 p3 {
   display: block;
-  width: 1000px;
-  margin: 30px auto;
+  width: 700px;
+  margin: 50px auto;
   font: 25px Monaco,"Source Code Pro",monospace;
   color: white;
 }
