@@ -94,7 +94,8 @@ p3 {
 
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px)
+{
      * {
        margin:0px;
        padding:0px;
@@ -180,7 +181,7 @@ p3 {
      }
      p2 {
        display: block;
-       width: 480px;
+       width: 450px;
        margin: 30px auto;
        font: 25px Monaco,"Source Code Pro",monospace;
        color: #00ff44;
