@@ -84,7 +84,7 @@ p {
 
 px50{ display: block; height: 1px}
 
-p1 {
+header_font {
   display: block;
   width: 600px;
   margin: 30px auto;
@@ -116,15 +116,15 @@ p3 {
        margin:0px;
        padding:0px;
      }
-
+     mark.green
+     {
+          color:#00ff44;
+          background: none;
+     }
      #octocat {
        display: block;
        width:450px;
        margin: 50px auto;
-     }
-
-     #mail {
-          alt="on"
      }
 
      a:link {
@@ -147,8 +147,18 @@ p3 {
        background-color: transparent;
        text-decoration: underline;
      }
+     #buttonSwitch
+     {
+          background: none;
+          border: none;
+          display: inline-block;
+          cursor: pointer;
+          margin: 30px auto;
+          font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+          color: #00fe29;
 
-     section0 {
+     }
+     #mainPicture {
           background-image: url(images/mountain_light.png);
           background-size: cover;
           background-attachment: fixed;
@@ -159,7 +169,7 @@ p3 {
           width: 480px auto;
      }
 
-     section1 {
+     textBackground {
           display: block;
           background-color: #393340;
           height: 1000px auto;
@@ -172,7 +182,7 @@ p3 {
           width: 480px auto;
      }
 
-     section2 {
+     headerBackground {
           display: block;
           background-color: #404347;
           height: 1000px auto;
@@ -188,7 +198,7 @@ p3 {
      }
      px50{ display: block; height: 1px}
 
-     p1 {
+     header_font {
        display: block;
        width: 400px;
        margin: 25px auto;
