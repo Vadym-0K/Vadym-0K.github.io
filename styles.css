@@ -3,15 +3,19 @@
   padding:0px;
 }
 
+
+mark.green
+{
+     color:#00ff44;
+     background: none;
+}
+
 #octocat {
   display: block;
   width:450px;
   margin: 50px auto;
 }
 
-#mail {
-     alt="on"
-}
 
 a:link {
   color: #a3e3f0;
@@ -33,8 +37,18 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+#buttonSwitch
+{
+     background: none;
+     border: none;
+     display: inline-block;
+     cursor: pointer;
+     margin: 30px auto;
+     font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+     color: #00fe29;
 
-section0 {
+}
+#mainPicture {
      background-image: url(images/mountain_light.png);
      background-size: cover;
      background-attachment: fixed;
@@ -43,7 +57,7 @@ section0 {
      height: 1080px ;
 }
 
-section1 {
+textBackground {
      display: block;
      background-color: #393340;
      height: 1000px auto;
@@ -54,7 +68,7 @@ section1 {
      backface-visibility: visible;
 }
 
-section2 {
+headerBackground {
      display: block;
      background-color: #404347;
      height: 1000px auto;
@@ -67,6 +81,7 @@ p {
   font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   color: #134514;
 }
+
 px50{ display: block; height: 1px}
 
 p1 {
@@ -75,8 +90,8 @@ p1 {
   margin: 30px auto;
   font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   color: white;
-
 }
+
 p2 {
   display: block;
   width: 700px ;
@@ -205,3 +220,4 @@ p3 {
 @media only screen and (max-width: 479px) {
     /*Insert your mobile CSS in here!*/
 }
+*/

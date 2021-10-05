@@ -4,52 +4,65 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <title>Vadym-Website-00</title>
+  <title>Vad-Website-00</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
   <style>@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');</style>
 
+  <script language="javascript" type="text/javascript">
+  var swcImg = 1;
+    function changeDivImage()
+    {
+        var imgPath = document.getElementById("mainPicture").style.backgroundImage;
+
+        if (swcImg == 0) {document.getElementById("mainPicture").style.backgroundImage = "url(images/mountain_light.png)";swcImg = 1;}
+        else {document.getElementById("mainPicture").style.backgroundImage = "url(images/pinkMTS_dark.png)"; swcImg = 0;}
+    }
+</script>
 </head>
 
 <body>
+<div id="mainPicture">
 
-<section0>
      <px50> </px50>
-<!---<img src="https://octodex.github.com/images/NUX_Octodex.gif" id="octocat" alt=""/> --->
+<!--<img src="https://octodex.github.com/images/NUX_Octodex.gif" id="octocat" alt=""/> -->
 
-<p1>Hello World! I’m omniknight0101. This is my website!</p1>
+<p1> Hello World! I’m <mark class="green"><button id="buttonSwitch" value="" onclick="changeDivImage()">omniknight0101</button></mark>. This is my website! </p1>
 <px50> </px50>
-</section0>
+
+</div>
+
 <px50> </px50>
-<section2>
+<headerBackground>
      <px50> </px50>
      <p2>./About_Me</p2>
      <px50> </px50>
-</section2>
-<section1>
+</headerBackground>
+
+<textBackground>
      <px50> </px50>
-     <p3>My name is Vadym Kharchenko. I am a computer science student. This info is just for you to glaze at...</p3>
+     <p3>My name is Vadym Kharchenko. I am a computer science student. This info is just for you to glaze at...
+     </p3>
      <p3>My main programming languages are:
      <br>&nbsp;&nbsp;&nbsp;C++<br>&nbsp;&nbsp;&nbsp;C<br>&nbsp;&nbsp;&nbsp;Java<br>
      &nbsp;&nbsp;&nbsp;ASM</p3>
      <p3>On a side gig I do digital ART. </p3>
      <px50> </px50>
-</section1>
+</textBackground>
 
-<section2>
+<headerBackground>
      <px50> </px50>
      <p2>./Contact_Informatin</p2>
      <px50> </px50>
-</section2>
+</headerBackground>
 
-<section1>
+<textBackground>
      <px50> </px50>
      <p3><a href="mailto:vadym.kharchenko@yahoo.com">Email:</a> vadym.kharchenko@yahoo.com<br>
      <a href="https://github.com/omniknight0101">GitHub:</a> github.com/omniknight0101
      <br><a href="https://discord.com/users/323590772060454923">Discord:</a> Happy_Robot#2612
      </p3>
      <px50> </px50>
-</section1>
-
+</textBackground>
 
 </body>
 
