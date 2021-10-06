@@ -3,13 +3,6 @@
   padding:0px;
 }
 
-
-mark.green
-{
-     color:#00ff44;
-     background: none;
-}
-
 #profile_picture {
   display: block;
   width:200px;
@@ -26,6 +19,13 @@ mark.green
      float: right;
 }
 
+#mainPicture {
+     background-image: url(images/mountain_light.png);
+     background-size: cover;
+     background-attachment: fixed;
+     display: block;
+     height: 1080px;
+}
 
 a:link {
   color: #a3e3f0;
@@ -48,6 +48,12 @@ a:active {
   text-decoration: underline;
 }
 
+mark.green
+{
+     color:#00ff44;
+     background: none;
+}
+
 .button1
 {
      background: none;
@@ -58,6 +64,7 @@ a:active {
      font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
      color: #00fe29;
 }
+
 .button1:hover
 {
      background: none;
@@ -86,14 +93,6 @@ a:active {
      margin: 50px auto;
      font: 25px Monaco,"Source Code Pro",monospace;
      color: #00ff44;
-}
-
-#mainPicture {
-     background-image: url(images/mountain_light.png);
-     background-size: cover;
-     background-attachment: fixed;
-     display: block;
-     height: 1080px;
 }
 
 textBackground {
@@ -146,10 +145,24 @@ mainFontWhite {
        margin:0px;
        padding:0px;
      }
-     mark.green
-     {
-          color:#00ff44;
-          background: none;
+     #mainPicture {
+          background-image: url(images/mountain_light.png);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          display: block;
+          margin: auto;
+          height: 800px ;
+          width: 480px auto;
+     }
+     #icons {
+          id = icons;
+          display:block;
+          margin: 15px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          float: right;
      }
      #profile_picture {
        display: block;
@@ -177,6 +190,11 @@ mainFontWhite {
        background-color: transparent;
        text-decoration: underline;
      }
+     mark.green
+     {
+          color:#00ff44;
+          background: none;
+     }
      .button1
      {
           background: none;
@@ -198,25 +216,7 @@ mainFontWhite {
           color: #00fe29;
           font-weight: bold;
      }
-     #mainPicture {
-          background-image: url(images/mountain_light.png);
-          background-size: cover;
-          background-attachment: fixed;
-          background-position: center;
-          display: block;
-          margin: auto;
-          height: 800px ;
-          width: 480px auto;
-     }
-     #icons {
-          id = icons;
-          display:block;
-          margin: 15px;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          float: right;
-     }
+
      textBackground {
           display: block;
           background-color: #393340;
