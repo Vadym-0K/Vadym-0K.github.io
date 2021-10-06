@@ -3,6 +3,10 @@
   padding:0px;
 }
 
+html{
+     scroll-behavior: smooth;
+}
+
 #profile_picture {
   display: block;
   width:200px;
@@ -10,7 +14,7 @@
 }
 
 #icons {
-     id = icons;
+     id = "icons";
      display:inline-block;
      margin: 15px;
      width: 50px;
@@ -95,6 +99,12 @@ mark.green
      color: #00ff44;
 }
 
+.gradientText {
+     background-image: linear-gradient(90deg, #7da0db, #00ff44);
+     background-clip: text;
+     color: transparent;
+}
+
 textBackground {
      display: block;
      background-color: #393340;
@@ -107,10 +117,11 @@ textBackground {
 
 headerBackground {
      display: block;
-     background-color: #404347;
+     background-color: #1d1e21;
      height: auto;
      margin: auto;
 }
+
 
 header_font {
   display: block;
@@ -146,23 +157,16 @@ mainFontWhite {
        padding:0px;
      }
      #mainPicture {
-          background-image: url(images/mountain_light.png);
-          background-size: cover;
-          background-attachment: fixed;
-          background-position: center;
           display: block;
           margin: auto;
           height: 800px ;
           width: 480px auto;
      }
      #icons {
-          id = icons;
           display:block;
           margin: 15px;
           width: 30px;
           height: 30px;
-          border-radius: 50%;
-          float: right;
      }
      #profile_picture {
        display: block;
@@ -170,93 +174,43 @@ mainFontWhite {
        margin: 50px auto;
      }
 
-     a:link {
-       color: #a3e3f0;
-       background-color: transparent;
-       text-decoration: none;
-     }
-     a:visited {
-       color: #bda9d4;
-       background-color: transparent;
-       text-decoration: none;
-     }
-     a:hover {
-       color: red;
-       background-color: transparent;
-       text-decoration: underline;
-     }
-     a:active {
-       color: yellow;
-       background-color: transparent;
-       text-decoration: underline;
-     }
-     mark.green
-     {
-          color:#00ff44;
-          background: none;
-     }
      .button1
      {
-          background: none;
-          border: none;
           display: inline-block;
-          cursor: pointer;
           margin: 30px auto;
           font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-          color: #00fe29;
      }
      .button1:hover
      {
-          background: none;
-          border: none;
           display: inline-block;
-          cursor: pointer;
           margin: 30px auto;
           font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-          color: #00fe29;
-          font-weight: bold;
      }
 
      textBackground {
-          display: block;
-          background-color: #393340;
           height: 1000px auto;
-          background-image: url(images/green_dark.png);
-          background-size: cover;
-          background-position: center;
-          background-blend-mode:darken;
-          background-attachment: fixed;
-          backface-visibility: visible;
           width: 480px auto;
      }
 
      headerBackground {
-          display: block;
-          background-color: #404347;
           height: 1000px auto;
           width: 480px auto;
      }
 
      header_font {
-       display: block;
        width: 400px;
        margin: auto;
        font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-       color: white;
      }
      mainFontGreen {
-       display: block;
        width: 400px;
        margin: auto;
        font: 25px Monaco,"Source Code Pro",monospace;
-       color: #00ff44;
      }
      mainFontWhite {
-       display: block;
        width: 400px;
        margin: auto;
-       font: 16px Monaco,"Source Code Pro",monospace;
-       color: white;
+       font: 20px Monaco,"Source Code Pro",monospace;
      }
 }
 
