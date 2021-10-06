@@ -20,8 +20,8 @@ mark.green
      id = icons;
      display:inline-block;
      margin: 15px;
-     width: 60px;
-     height: 60px;
+     width: 50px;
+     height: 50px;
      border-radius: 50%;
      float: right;
 }
@@ -47,6 +47,7 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 .button1
 {
      background: none;
@@ -92,17 +93,15 @@ a:active {
      background-size: cover;
      background-attachment: fixed;
      display: block;
-     margin: auto;
-     height: 1080px ;
+     height: 1080px;
 }
 
 textBackground {
      display: block;
      background-color: #393340;
-     height: 1000px auto;
+     height: auto;
      background-image: url(images/green_dark.png);
      background-size: cover;
-     //background-blend-mode:darken;
      background-attachment: fixed;
      backface-visibility: visible;
 }
@@ -110,23 +109,14 @@ textBackground {
 headerBackground {
      display: block;
      background-color: #404347;
-     height: 1000px auto;
+     height: auto;
+     margin: auto;
 }
-
-p {
-  display: block;
-  width: 600px;
-  margin: 50px auto;
-  font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  color: #134514;
-}
-
-px50{ display: block; height: 1px}
 
 header_font {
   display: block;
   width: 600px;
-  margin: 30px auto;
+  margin: auto;
   font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   color: white;
 }
@@ -134,7 +124,7 @@ header_font {
 mainFontGreen {
   display: block;
   width: 700px ;
-  margin: 50px auto;
+  margin:auto;
   font: 25px Monaco,"Source Code Pro",monospace;
   color: #00ff44;
 }
@@ -142,7 +132,7 @@ mainFontGreen {
 mainFontWhite {
   display: block;
   width: 700px;
-  margin: 50px auto;
+  margin:auto;
   font: 25px Monaco,"Source Code Pro",monospace;
   color: white;
 }
@@ -222,8 +212,8 @@ mainFontWhite {
           id = icons;
           display:block;
           margin: 15px;
-          width: 60px auto;
-          height: 60px;
+          width: 30px;
+          height: 30px;
           border-radius: 50%;
           float: right;
      }
@@ -247,33 +237,24 @@ mainFontWhite {
           width: 480px auto;
      }
 
-     p {
-       display: block;
-       width: 400px;
-       margin: 50px auto;
-       font: 35px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-       color: #134514;
-     }
-     px50{ display: block; height: 1px}
-
      header_font {
        display: block;
        width: 400px;
-       margin: 25px auto;
+       margin: auto;
        font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
        color: white;
      }
      mainFontGreen {
        display: block;
        width: 400px;
-       margin: 30px auto;
+       margin: auto;
        font: 25px Monaco,"Source Code Pro",monospace;
        color: #00ff44;
      }
      mainFontWhite {
        display: block;
        width: 400px;
-       margin: 16px auto;
+       margin: auto;
        font: 16px Monaco,"Source Code Pro",monospace;
        color: white;
      }
