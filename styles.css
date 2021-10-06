@@ -16,6 +16,16 @@ mark.green
   margin: 50px auto;
 }
 
+#icons {
+     id = icons;
+     display:inline-block;
+     margin: 15px;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     float: right;
+}
+
 
 a:link {
   color: #a3e3f0;
@@ -208,7 +218,15 @@ mainFontWhite {
           height: 800px ;
           width: 480px auto;
      }
-
+     #icons {
+          id = icons;
+          display:block;
+          margin: 15px;
+          width: 60px auto;
+          height: 60px;
+          border-radius: 50%;
+          float: right;
+     }
      textBackground {
           display: block;
           background-color: #393340;
