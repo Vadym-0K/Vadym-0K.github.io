@@ -42,7 +42,7 @@ html{
 {
      id="mainPlayground";
      display: none;
-     height: 100%;
+     height: 1920px;
      width: 100%;
      background-color: #6283a8;
      transition: all 5s ease-in;
@@ -155,7 +155,7 @@ textBackground {
 }
 
 headerBackground {
-     display: block;
+     display:block;
      background-color: #1d1e21;
      height: auto;
      margin: auto;
