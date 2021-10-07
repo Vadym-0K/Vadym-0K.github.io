@@ -42,7 +42,7 @@ html{
 {
      id="mainPlayground";
      display: none;
-     height: 1920px;
+     height: 1080px;
      width: 100%;
      background-color: #6283a8;
      transition: all 5s ease-in;
@@ -52,8 +52,9 @@ html{
      background-image: url(images/bomb.jpg);
      background-size: cover;
      background-attachment: fixed;
+     background-position: center;
      display: none;
-     height: 1080px;
+     height: 100%;
 }
 a:link {
   color: #a3e3f0;
@@ -172,7 +173,8 @@ header_font {
 
 mainFontGreen {
   display: block;
-  width: 700px ;
+  width: 40% ;
+  align-self: center;
   margin:auto;
   font: 25px Monaco,"Source Code Pro",monospace;
   color: #00ff44;
@@ -188,7 +190,7 @@ mainFontWhite {
 mainFontWhiteCenter{
      display: block;
      align-self: center;
-     width: 700px;
+     width: 100%;
      margin:auto;
      font: 50px Monaco,"Source Code Pro",monospace;
      color: white;
@@ -202,6 +204,7 @@ mainFontWhiteCenter{
        margin:0px;
        padding:0px;
      }
+
      #mainPicture {
           display: block;
           margin: auto;
@@ -218,6 +221,16 @@ mainFontWhiteCenter{
        display: block;
        width:150px;
        margin: 50px auto;
+     }
+
+     #PGscreen2
+     {
+          id="mainPlayground";
+          display: none;
+          height: 1080px;
+          width: 100%;
+          background-color: #6283a8;
+          transition: all 5s ease-in;
      }
 
      .button1
@@ -259,6 +272,7 @@ mainFontWhiteCenter{
        margin: auto;
        font: 20px Monaco,"Source Code Pro",monospace;
      }
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
