@@ -7,23 +7,35 @@
        <style>
        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
        .parent {
-            background-color: #6c5245;
-            height: 400px;
-            width: 200px;
+            background-color: #37302c;
+            height: 100px;
+            width: 700px;
+            animation: 1s linear forwards;
        }
        .child
        {
-            background-color: #58be5c;
-            height: 50%;
-            width: 100%;
+            background-color: #6454df;
+            height: 100%;
+            width: 50%;
             transition: transform 1s linear;
        }
        .parent:hover .child {
-            animation: 1s linear forwards;
-            transform: translateY(100%);
-            display: grid;
+            animation: left-to-right 0.5s linear forwards alternate infinite;
        }
-       .parent:active { animation: 1s linear forwards; transform: translateX(100%);}
+       .parent:active {
+            animation: 1s linear forwards;
+
+       }
+
+       @keyframes left-to-right{
+            0% {
+                 transform: translateX(0%);
+            }
+            100% {
+                 transform: translateX(100%);
+                 background-color: #d52149;
+            }
+       }
 
        </style>
      </head>
@@ -31,14 +43,34 @@
      function welcome()
      {
           document.getElementById("mainPlayground").style.backgroundColor = "#3f4b7a";
-          document.getElementById("button2").style.display="none";
+          document.getElementById("button3").style.display="none";
           document.getElementById("PGscreen2").style.display="block";
+     }
+     counter = 0;
+     function level2()
+     {
+          var pass = prompt("Enter Password!", "");
+          if(pass == "0101") {
+          }
+          else if (pass != null) {
+               counter +=1;
+               if (counter == 1) {document.getElementById("demo").innerHTML =
+               "Incorrect Pass<br><mark class=\"red\">You Have 3 more tries before we drone strike your location<br></mark>*** Hint, it's not '0101' ***";}
+               if (counter == 2) {document.getElementById("demo").innerHTML =
+               "Incorrect Pass<br><mark class=\"red\">You Have 2 more tries before we drone strike your location<br></mark>*** Hint, it's not '0101' ***";}
+               if (counter == 3) {document.getElementById("demo").innerHTML =
+               "Incorrect Pass<br><mark class=\"red\"><b>You Have 1 more tries before we drone strike your location<br></b></mark>*** Hint, it's not '0101' ***";}
+               if (counter == 4) {
+                    document.getElementById("boomscreen").style.display="block";
+                    document.getElementById("PGscreen2").style.display="none";
+               }
+          }
 
 
      }
      </script>
 <body>
-     <button id="button2" name="button" onclick="welcome()">
+     <button id="button3" name="button" onclick="welcome()">
      <div id="mainPlayground" >
           <mainFontWhiteCenter><br><mark class="red">DO NOT CLICK </mark></mainFontWhiteCenter>
      </div>
@@ -49,6 +81,14 @@
                     <div class="child">
                     </div>
                </div>
+               <mainFontWhite>
+                    <br>>>You know what? I now remember that I have a top notch security system, so BYE! <br> <br/>>>See you NEVER!!! <br/>&nbsp;
+               </mainFontWhite>
+               <button class="button4" name="button4" onclick="level2()">>> UP THE LVL >></button>
+               <p id="demo"></p>
+
+     </div>
+     <div id="boomscreen">
      </div>
 </body>
 </html>

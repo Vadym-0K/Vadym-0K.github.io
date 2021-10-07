@@ -47,6 +47,14 @@ html{
      background-color: #6283a8;
      transition: all 5s ease-in;
 }
+#boomscreen
+{
+     background-image: url(images/bomb.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     display: none;
+     height: 1080px;
+}
 a:link {
   color: #a3e3f0;
   background-color: transparent;
@@ -93,8 +101,7 @@ mark.red
 {
      color: #65e6f7;
 }
-
-#button2
+.button2
 {
      background-color: linear-gradient(90deg, #7da0db, #00ff44);
      background-clip: text;
@@ -109,6 +116,26 @@ mark.red
 .button2:hover
 {
      color: red;
+}
+#button3
+{
+     background-color: linear-gradient(90deg, #7da0db, #00ff44);
+     background-clip: text;
+     color: transparent;
+     font: 25px Monaco,"Source Code Pro",monospace;
+     font-weight: bold;
+     cursor: pointer;
+     width: 100%;
+     height: 100%;
+     border: none;
+}
+.button4 {
+     align-self: center;
+     background-color: linear-gradient(90deg, #7da0db, #00ff44);
+     height: auto;
+     width: auto;
+     color: rgb(59, 61, 52);
+     font: 25px Monaco,"Source Code Pro",monospace;
 }
 
 .gradientText {
