@@ -4,13 +4,51 @@
        <meta name="viewport" content="width-device-width, initial-scale=1.0">
        <title>Vad-Website-00/Playground</title>
        <LINK href="styles.css" rel="stylesheet" type="text/css">
-       <style>@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');</style>
-     </head>
-<body>
-     <button class="button2" name="button">
-     <div id="mainPlayground">
+       <style>
+       @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+       .parent {
+            background-color: #6c5245;
+            height: 400px;
+            width: 200px;
+       }
+       .child
+       {
+            background-color: #58be5c;
+            height: 50%;
+            width: 100%;
+            transition: transform 1s linear;
+       }
+       .parent:hover .child {
+            animation: 1s linear forwards;
+            transform: translateY(100%);
+            display: grid;
+       }
+       .parent:active { animation: 1s linear forwards; transform: translateX(100%);}
 
+       </style>
+     </head>
+     <script>
+     function welcome()
+     {
+          document.getElementById("mainPlayground").style.backgroundColor = "#3f4b7a";
+          document.getElementById("button2").style.display="none";
+          document.getElementById("PGscreen2").style.display="block";
+
+
+     }
+     </script>
+<body>
+     <button id="button2" name="button" onclick="welcome()">
+     <div id="mainPlayground" >
+          <mainFontWhiteCenter><br><mark class="red">DO NOT CLICK </mark></mainFontWhiteCenter>
      </div>
      </button>
+     <div id="PGscreen2" >
+          <mainFontWhite><br> >>You totally clicked!! :(<br><br> >>Ohh well ¯\_(ツ)_/¯<br><br>>>Here's what I have here, BUT shhh don't tell anyone <mark class="red"><b>****** TOP SECRET ******<b><br>&nbsp;</mark></<mainFontWhite>
+               <div class="parent">
+                    <div class="child">
+                    </div>
+               </div>
+     </div>
 </body>
 </html>

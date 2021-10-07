@@ -38,6 +38,15 @@ html{
      background-color: black;
 }
 
+#PGscreen2
+{
+     id="mainPlayground";
+     display: none;
+     height: 100%;
+     width: 100%;
+     background-color: #6283a8;
+     transition: all 5s ease-in;
+}
 a:link {
   color: #a3e3f0;
   background-color: transparent;
@@ -64,7 +73,11 @@ mark.green
      color:#00ff44;
      background: none;
 }
-
+mark.red
+{
+     color:#e9773f;
+     background: none;
+}
 .button1
 {
      background: none;
@@ -81,10 +94,9 @@ mark.green
      color: #65e6f7;
 }
 
-.button2
+#button2
 {
-     display:inline-block;
-     background-image: linear-gradient(90deg, #7da0db, #00ff44);
+     background-color: linear-gradient(90deg, #7da0db, #00ff44);
      background-clip: text;
      color: transparent;
      font: 25px Monaco,"Source Code Pro",monospace;
@@ -146,7 +158,14 @@ mainFontWhite {
   font: 25px Monaco,"Source Code Pro",monospace;
   color: white;
 }
-
+mainFontWhiteCenter{
+     display: block;
+     align-self: center;
+     width: 700px;
+     margin:auto;
+     font: 50px Monaco,"Source Code Pro",monospace;
+     color: white;
+}
 
 
 /* All Mobile Sizes (devices and browser) */
@@ -187,9 +206,7 @@ mainFontWhite {
           font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 
      }
-     .button2
-     {
-     }
+
      textBackground {
           height: 1000px auto;
           width: 480px auto;
