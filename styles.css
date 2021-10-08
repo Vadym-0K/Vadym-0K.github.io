@@ -132,11 +132,12 @@ mark.red
 }
 .button4 {
      align-self: center;
-     background-color: linear-gradient(90deg, #7da0db, #00ff44);
+     background-color: transparent 100%;
      height: auto;
      width: auto;
-     color: rgb(59, 61, 52);
+     color: #48567e;
      font: 25px Monaco,"Source Code Pro",monospace;
+
 }
 
 .gradientText {
@@ -187,6 +188,105 @@ mainFontWhite {
   font: 25px Monaco,"Source Code Pro",monospace;
   color: white;
 }
+mainFontWhiteT{
+  display: block;
+  width: 700px;
+  margin:auto;
+  font: 25px Monaco,"Source Code Pro",monospace;
+  color: white;
+  opacity: 0;
+}
+
+
+.fade-in-text {
+  display: block;
+  animation: fadeIn linear 3s ;
+     -webkit-animation: fadeIn linear 3s;
+     -moz-animation: fadeIn linear 2s;
+     -o-animation: fadeIn linear 2s;
+     -ms-animation: fadeIn linear 2s;
+     animation-fill-mode: forwards;
+}
+.fade-in-text2 {
+  display: block;
+  animation: fadeIn linear 3s ;
+     -webkit-animation: fadeIn linear 3s;
+     -moz-animation: fadeIn linear 3s;
+     -o-animation: fadeIn linear 3s;
+     -ms-animation: fadeIn linear 3s;
+     animation-fill-mode: forwards;
+     animation-delay: 2s;
+}
+.fade-in-text3 {
+  display: block;
+  animation: fadeIn linear 3s ;
+     -webkit-animation: fadeIn linear 3s;
+     -moz-animation: fadeIn linear 3s;
+     -o-animation: fadeIn linear 3s;
+     -ms-animation: fadeIn linear 3s;
+     animation-fill-mode: forwards;
+     animation-delay: 4s;
+}
+.fade-in-text4 {
+  display: block;
+  animation: fadeIn linear 3s ;
+     -webkit-animation: fadeIn linear 3s;
+     -moz-animation: fadeIn linear 3s;
+     -o-animation: fadeIn linear 3s;
+     -ms-animation: fadeIn linear 3s;
+     animation-fill-mode: forwards;
+     animation-delay: 6s;
+}
+.fade-in-text5 {
+  display: block;
+  animation: fadeIn linear 3s ;
+     -webkit-animation: fadeIn linear 3s;
+     -moz-animation: fadeIn linear 3s;
+     -o-animation: fadeIn linear 3s;
+     -ms-animation: fadeIn linear 3s;
+     animation-fill-mode: forwards;
+     animation-delay: 8s;
+}
+.fade-in-button {
+  display: block;
+  animation: fadeIn linear 3s ;
+     -webkit-animation: fadeIn linear 3s;
+     -moz-animation: fadeIn linear 3s;
+     -o-animation: fadeIn linear 3s;
+     -ms-animation: fadeIn linear 3s;
+     animation-fill-mode: forwards;
+     animation-delay: 10s;
+     opacity: 0;
+     height: auto;
+     width: auto;
+     color: #48567e;
+     font: 25px Monaco,"Source Code Pro",monospace;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 mainFontWhiteCenter{
      display: block;
      align-self: center;
