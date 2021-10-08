@@ -42,7 +42,7 @@ html{
 {
      id="mainPlayground";
      display: none;
-     height: 1080px;
+     height: 100%;
      width: 100%;
      background-color: #6283a8;
      transition: all 5s ease-in;
@@ -327,7 +327,6 @@ mainFontWhiteCenter{
      {
           id="mainPlayground";
           display: none;
-          height: 1080px;
           width: 100%;
           background-color: #6283a8;
           transition: all 5s ease-in;
@@ -371,6 +370,12 @@ mainFontWhiteCenter{
        width: 400px;
        margin: auto;
        font: 20px Monaco,"Source Code Pro",monospace;
+     }
+     mainFontWhiteT{
+       width: 400px;
+       margin: auto;
+       font: 20px Monaco,"Source Code Pro",monospace;
+       opacity: 0;
      }
 
 }
