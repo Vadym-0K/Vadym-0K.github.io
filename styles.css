@@ -8,19 +8,25 @@ html{
 }
 
 #profile_picture {
-  display: block;
-  width:200px;
-  margin: 50px auto;
+     display: block;
+     width:10em;
+     margin: 50px auto;
 }
 
-#icons {
+.icons {
      id = "icons";
      display:inline-block;
      margin: 15px;
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
+
+     height: 5%;
+     border: none;
+     /* border-radius: 50%; */
      float: right;
+     opacity: 70%;
+}
+.icons:hover {
+     opacity: 100%;
+     height: 5.5%;
 }
 
 #mainPicture {
@@ -60,6 +66,7 @@ a:link {
   color: #a3e3f0;
   background-color: transparent;
   text-decoration: none;
+
 }
 a:visited {
   color: #bda9d4;
@@ -70,6 +77,7 @@ a:hover {
   color: red;
   background-color: transparent;
   text-decoration: underline;
+
 }
 a:active {
   color: yellow;
@@ -85,6 +93,17 @@ mark.green
 mark.red
 {
      color:#e9773f;
+     background: none;
+}
+mark.l_orange
+{
+     color:#ffad85;
+     background: none;
+}
+
+mark.l_pink
+{
+     color:#dc90de;
      background: none;
 }
 .button1
@@ -326,11 +345,7 @@ mainFontWhiteCenter{
           width: 30px;
           height: 30px;
      }
-     #profile_picture {
-       display: block;
-       width:150px;
-       margin: 50px auto;
-     }
+
 
      #PGscreen2
      {
