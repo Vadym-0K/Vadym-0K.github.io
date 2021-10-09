@@ -140,6 +140,15 @@ mark.red
 
 }
 
+.button5 {
+     /* align-self: center; */
+     display:contents;
+     background-color: transparent 100%;
+     height: 100%;
+     width: 100%;
+     cursor: pointer;
+}
+
 .gradientText {
      background-image: linear-gradient(90deg, #7da0db, #00ff44);
      background-clip: text;

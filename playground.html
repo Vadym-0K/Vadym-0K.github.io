@@ -21,10 +21,6 @@
             transition: transform 1s linear;
             animation: left-to-right 0.5s linear forwards alternate infinite
        }
-       .child:active {
-
-       }
-
 
        @keyframes left-to-right{
             0% {
@@ -82,7 +78,7 @@
      }
      </script>
 <body>
-     <button id="button3" name="button" onclick="welcome();  document.getElementById('siren').play();">
+     <button id="button3" name="button" onclick="welcome();">
      <div id="mainPlayground" >
           <mainFontWhiteCenter><br><mark class="red">DO NOT CLICK </mark></mainFontWhiteCenter>
      </div>
@@ -94,11 +90,15 @@
                >>You totally clicked!! :( </mainFontWhiteT>
                <mainFontWhiteT class="fade-in-text2"><br> >>Ohh well ¯\_(ツ)_/¯</mainFontWhiteT><mainFontWhiteT class="fade-in-text3"><br>>>Here's what I have here, BUT shhh don't tell anyone <mark class="red"><b>****** TOP SECRET ******<b><br>&nbsp;</mark>
           </mainFontWhiteT>
+
           <mainFontWhite>
-               <div class="parent">
-                    <div class="child">
+
+                    <div class="parent">
+                         <button class="button5" name="button2" onclick="document.getElementById('siren').play();">
+                         <div class="child">
+                         </div>
+                         </button>
                     </div>
-               </div>
                <mainFontWhiteT class="fade-in-text4">
                     <br>>>You know what? I now remember that I have a Top Notch Security System, so BYE! <br>
                     </mainFontWhiteT><mainFontWhiteT class="fade-in-text5"><br>>>See you NEVER!!! <br/>&nbsp;
