@@ -9,13 +9,22 @@
      .welcome_header
      {
           display: block;
-          width: auto;
+          width: 400px;
           padding: 5em;
           box-sizing: border-box;
           margin: auto;
      }
 
      .main_box
+     {
+          display: block;
+          width: auto;
+          height: 55em auto;
+          border: 3px solid #40414a;
+          box-sizing: border-box;
+          margin: auto;
+     }
+     .playground_box
      {
           display: block;
           width: auto;

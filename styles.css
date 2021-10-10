@@ -1,7 +1,14 @@
 * {
   margin:0px;
   padding:0px;
+  font: "Source Code Pro";
 }
+
+@font-face {
+  font-family: source1;
+  src: url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);
+}
+
 
 /* BOXES */
 .navbar
@@ -10,6 +17,7 @@
      width: auto;
      height: auto;
 }
+/* TODO add to mobile */
 .welcome_header
 {
      display: block;
@@ -29,6 +37,16 @@
      margin: auto;
 }
 
+.playground_box
+{
+     display: block;
+     width: 750px;
+     height: 55em auto;
+     padding: 2em;
+     border: none;
+     box-sizing: border-box;
+     margin: auto;
+}
 .subtitles
 {
      background-color: #181818;
@@ -56,35 +74,12 @@
 }
 
 /* --------------------------- */
-.lightdark
-{
-     height: 100%;
-      padding: 1px;
-      
-     /* position: absolute; */
-     /* top: 2em; */
-      left: 20px;
-     /* background: none; */
-     float: right;
-     opacity: 50%;
-     cursor: pointer;
-     border-radius: 50%;
-     box-sizing: border-box;
-}
-.lightdark:hover
-{
-     border: 2px solid #64c872;
-     opacity: 100%;
-}
+
 
 .icon {
      display: inline-block;
      margin: 15px;
-<<<<<<< HEAD
      height: 50px;
-=======
-     height: 3em;
->>>>>>> 6d5bc583f2069f556d253377b11487bda7c944b7
      border-radius: 50%;
      border: 5px solid #64c872;
      background-color: white;
@@ -94,11 +89,7 @@
 
 .icon:hover {
      opacity: 100%;
-<<<<<<< HEAD
      height: 3.2em;
-=======
-     height: 3.5em;
->>>>>>> 6d5bc583f2069f556d253377b11487bda7c944b7
      border: 5px solid #36e64f;
 }
 /* collapsible */
@@ -144,19 +135,11 @@
   content: '\25be';
   font-size: 1em;
   float: right;
-<<<<<<< HEAD
 }
 
 .active:after {
   content: "\25b4";
 }
-=======
-}
-
-.active:after {
-  content: "\25b4";
-}
->>>>>>> 6d5bc583f2069f556d253377b11487bda7c944b7
 /* ------------------------- */
 
 /* SCREENS */
@@ -246,6 +229,15 @@ a.active {
 
 /* STANDART STUFF */
 
+#transparent_font
+{
+     font: 20px Monaco,"Source Code Pro",monospace;
+     opacity: 0%;
+}
+p
+{
+     font: 20px Monaco,"Source Code Pro",monospace;
+}
 html
 {
      scroll-behavior: smooth;
@@ -254,6 +246,7 @@ html
      background-size: cover;
      background-attachment: fixed;
      backface-visibility: visible;
+     font-family: source1;
      font: 16px Monaco,"Source Code Pro",monospace;
      color:#e6edea;
 }
@@ -337,8 +330,6 @@ mark.white
      background-color: linear-gradient(90deg, #7da0db, #00ff44);
      background-clip: text;
      color: transparent;
-     font: 25px Monaco,"Source Code Pro",monospace;
-     font-weight: bold;
      cursor: pointer;
      width: 100%;
      height: 100%;
@@ -348,7 +339,7 @@ mark.white
 {
      color: red;
 }
-#button3
+#full_screen_button
 {
      background-color: linear-gradient(90deg, #7da0db, #00ff44);
      background-clip: text;
@@ -384,7 +375,7 @@ mark.white
 
 /* ANIMATION FOR DO_NOT_CLICK */
 
-.fade-in-text {
+.fade-in-text1 {
   display: block;
   animation: fadeIn linear 3s ;
      -webkit-animation: fadeIn linear 3s;
@@ -446,7 +437,8 @@ mark.white
      height: auto;
      width: auto;
      color: #48567e;
-     font: 25px Monaco,"Source Code Pro",monospace;
+     font-size: 25px;
+     font-family: source1;
 }
 @keyframes fadeIn {
   0% {opacity:0;}

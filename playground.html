@@ -5,8 +5,10 @@
        <title>DoNotClick</title>
        <title>Vad-Website-00/Playground</title>
        <LINK href="styles.css" rel="stylesheet" type="text/css">
+       <LINK href="mobile.css" rel="stylesheet" type="text/css">
        <style>
        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+       @import url('https://www.1001fonts.com/zig-font.html');
        .parent {
             background-color: #37302c;
             height: 100px;
@@ -47,7 +49,7 @@
      function welcome()
      {
           document.getElementById("mainPlayground").style.backgroundColor = "#3f4b7a";
-          document.getElementById("button3").style.display="none";
+          document.getElementById("full_screen_button").style.display="none";
           document.getElementById("PGscreen2").style.display="block";
      }
      counter = 0;
@@ -64,46 +66,59 @@
                if (counter == 2) {document.getElementById("demo").innerHTML =
                "Incorrect Pass<br><mark class=\"red\">You Have 2 more tries before we drone strike your location<br></mark>*** Hint, it's not '0101' ***";}
                if (counter == 3) {document.getElementById("demo").innerHTML =
-               "Incorrect Pass<br><mark class=\"red\"><b>You Have 1 more try before we drone strike your location<br></b></mark>*** Hint, it's not '0101' ***";}
+               "<p>Incorrect Pass<br><mark class=\"red\"><b>You Have 1 more try before we drone strike your location<br></b></mark>*** Hint, it's not '0101' ***</p>";}
                if (counter == 4) {
                     document.getElementById("boomscreen").style.display="block";
                     document.getElementById("PGscreen2").style.display="none";
                }
           }
-
-
      }
      </script>
+
 <body>
-     <button id="button3" name="button" onclick="welcome();">
+     <audio id="siren" src="sounds/siren.wav" preload="auto"></audio>
+
+     <button id="full_screen_button" name="button" onclick="welcome();">
      <div id="mainPlayground" >
-          <mainFontWhiteCenter><br><mark class="red">DO NOT CLICK </mark></mainFontWhiteCenter>
+          <div class="welcome_header">
+               <br><br><h1><b><mark class="red">DO NOT CLICK </mark></b><h1>
+          </div>
      </div>
      </button>
+
+     <!-- basicly body -->
      <div id="PGscreen2" >
-          <mainFontWhiteT class="fade-in-text"><br>
-               <audio id="siren" src="sounds/siren.wav" preload="auto"></audio>
 
-               >>You totally clicked!! :( </mainFontWhiteT>
-               <mainFontWhiteT class="fade-in-text2"><br> >>Ohh well ¯\_(ツ)_/¯</mainFontWhiteT><mainFontWhiteT class="fade-in-text3"><br>>>Here's what I have here, BUT shhh don't tell anyone <mark class="red"><b>****** TOP SECRET ******<b><br>&nbsp;</mark>
-          </mainFontWhiteT>
+<div class="playground_box">
+     <p class="fade-in-text1" id="transparent_font"><br>
+          >>You totally clicked!! :(
+     </p>
+          <p class="fade-in-text2" id="transparent_font"><br> >>Ohh well ¯\_(ツ)_/¯</p><p class="fade-in-text3" id="transparent_font"><br>>>Here's what I have here, BUT shhh don't tell anyone <mark class="red"><b>****** TOP SECRET ******<b><br>&nbsp;</mark>
+     </p>
 
-          <mainFontWhite>
+     <mainFontWhite>
 
-                    <div class="parent">
-                         <button class="button5" name="button2" onclick="document.getElementById('siren').play();">
-                         <div class="child">
-                         </div>
-                         </button>
+               <div class="parent">
+                    <button class="button5" name="button2" onclick="document.getElementById('siren').play();">
+                    <div class="child">
                     </div>
-               <mainFontWhiteT class="fade-in-text4">
-                    <br>>>You know what? I now remember that I have a Top Notch Security System, so BYE! <br>
-                    </mainFontWhiteT><mainFontWhiteT class="fade-in-text5"><br>>>See you NEVER!!! <br/>&nbsp;
-               </mainFontWhiteT>
-               <button class="fade-in-button" name="button4" onclick="level2();">>> TNS system >></button>
-               <p id="demo"></p>
+                    </button>
+               </div>
+          <p class="fade-in-text4" id="transparent_font">
+               <br>>> . . . You know what? I now remember that I have a Top Notch Security System, so BYE! <br>
+          </p>
+          <p class="fade-in-text5" id="transparent_font"><br>>>See you NEVER!!! <br/>&nbsp;
+          </p>
+          <button class="fade-in-button" name="button4" onclick="level2();">>> TNS system >></button>
+          <p id="demo"></p>
 
-     </div>
+</div>
+</div>
+
+
+
+     <!-- --------------------- -->
+
      <div id="boomscreen">
      </div>
 </body>
