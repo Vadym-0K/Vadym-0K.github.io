@@ -3,15 +3,47 @@
   padding:0px;
 }
 
-html{
-     scroll-behavior: smooth;
+/* BOXES */
+.welcome_header
+{
+     display: block;
+     width: 750px;
+     padding: 5em;
+     box-sizing: border-box;
+     margin: auto;
 }
 
-#profile_picture {
+.main_box
+{
      display: block;
-     width:10em;
-     margin: 50px auto;
+     width: 750px;
+     height: 55em auto;
+     border: 3px solid #40414a;
+     box-sizing: border-box;
+     margin: auto;
 }
+
+.subtitles
+{
+     background-color: #181818;
+     box-sizing: border-box;
+     width: 100%;
+     height: auto;
+     padding: 1em;
+}
+.text
+{
+     display: inline-block;
+     background-color: #2b2b2b;
+     box-sizing: border-box;
+     width: 100%;
+     height: auto;
+     padding: 2em;
+}
+
+/* --------------------------- */
+
+/* TODO add nav bar and extandable icons prob */
 
 .icons {
      id = "icons";
@@ -24,18 +56,28 @@ html{
      float: right;
      opacity: 70%;
 }
+
 .icons:hover {
      opacity: 100%;
      height: 5.5%;
 }
 
-#mainPicture {
-     background-image: url(images/mountain_light.png);
-     background-size: cover;
-     background-attachment: fixed;
+/* --------------------------- */
+
+/* SCREENS */
+
+#profile_picture
+{
      display: block;
-     height: 1080px;
+     width:7em;
+     border: 3px solid #565b7d;
+     border-radius: 50%;
+     box-sizing: border-box;
+     padding: 0.5em;
+     margin-left: auto;
+     margin-right: auto;
 }
+
 #mainPlayground{
      id="mainPlayground";
      display: block;
@@ -62,6 +104,31 @@ html{
      display: none;
      height: 100%;
 }
+
+/* -------------------------------- */
+
+/* STANDART STUFF */
+
+html
+{
+     scroll-behavior: smooth;
+     background-image: url(images/green_dark.png);
+     background-size: cover;
+     background-attachment: fixed;
+     backface-visibility: visible;
+}
+
+p { font: 1.3em Monaco,"Source Code Pro",monospace }
+
+h1
+{
+     font: 3em Monaco,"Source Code Pro",monospace;
+     background: -webkit-linear-gradient(#a4ffaf, #7ea6ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: bold;
+}
+
 a:link {
   color: #a3e3f0;
   background-color: transparent;
@@ -106,6 +173,16 @@ mark.l_pink
      color:#dc90de;
      background: none;
 }
+mark.white
+{
+     color:#e6edea;
+     background: none;
+}
+
+/* -------------------------------- */
+
+/*TODO BUTTON CHECK NEEDED FOR PROJECT */
+
 .button1
 {
      background: none;
@@ -113,7 +190,6 @@ mark.l_pink
      display: inline-block;
      cursor: pointer;
      margin: 30px auto;
-     font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
      color: #00fe29;
 }
 
@@ -168,63 +244,10 @@ mark.l_pink
      cursor: pointer;
 }
 
-.gradientText {
-     background-image: linear-gradient(90deg, #7da0db, #00ff44);
-     background-clip: text;
-     color: transparent;
-}
-
-textBackground {
-     display: block;
-     background-color: #393340;
-     height: auto;
-     background-image: url(images/green_dark.png);
-     background-size: cover;
-     background-attachment: fixed;
-     backface-visibility: visible;
-}
-
-headerBackground {
-     display:block;
-     background-color: #1d1e21;
-     height: auto;
-     margin: auto;
-}
+/* -------------------------------- */
 
 
-header_font {
-  display: block;
-  width: 600px;
-  margin: auto;
-  font: 50px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  color: white;
-}
-
-mainFontGreen {
-  display: block;
-  width: 700px ;
-  align-self: center;
-  margin:auto;
-  font: 25px Monaco,"Source Code Pro",monospace;
-  color: #00ff44;
-}
-
-mainFontWhite {
-  display: block;
-  width: 700px;
-  margin:auto;
-  font: 25px Monaco,"Source Code Pro",monospace;
-  color: white;
-}
-mainFontWhiteT{
-  display: block;
-  width: 700px;
-  margin:auto;
-  font: 25px Monaco,"Source Code Pro",monospace;
-  color: white;
-  opacity: 0;
-}
-
+/* ANIMATION FOR DO_NOT_CLICK */
 
 .fade-in-text {
   display: block;
@@ -315,102 +338,6 @@ mainFontWhiteT{
   100% {opacity:1;}
 }
 
-mainFontWhiteCenter{
-     display: block;
-     align-self: center;
-     width: 100%;
-     margin:auto;
-     font: 50px Monaco,"Source Code Pro",monospace;
-     color: white;
-}
+/* -------------------------------- */
 
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px)
-{
-     * {
-       margin:0px;
-       padding:0px;
-     }
-
-     #mainPicture {
-          display: block;
-          margin: auto;
-          height: 800px ;
-          width: 480px auto;
-     }
-     #icons {
-          display:block;
-          margin: 15px;
-          width: 30px;
-          height: 30px;
-     }
-
-
-     #PGscreen2
-     {
-          id="mainPlayground";
-          display: none;
-          width: 100%;
-          background-color: #6283a8;
-          transition: all 5s ease-in;
-     }
-
-     .button1
-     {
-          display: inline-block;
-          margin: 30px auto;
-          font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-     }
-     .button1:hover
-     {
-          display: inline-block;
-          margin: 30px auto;
-          font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-
-     }
-
-     textBackground {
-          height: 1000px auto;
-          width: 480px auto;
-     }
-
-     headerBackground {
-          height: 1000px auto;
-          width: 480px auto;
-     }
-
-     header_font {
-       width: 400px;
-       margin: auto;
-       font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-     }
-     mainFontGreen {
-       width: 400px;
-       margin: auto;
-       font: 25px Monaco,"Source Code Pro",monospace;
-     }
-     mainFontWhite {
-       width: 400px;
-       margin: auto;
-       font: 20px Monaco,"Source Code Pro",monospace;
-     }
-     mainFontWhiteT{
-       width: 400px;
-       margin: auto;
-       font: 20px Monaco,"Source Code Pro",monospace;
-       opacity: 0;
-     }
-
-}
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    /*Insert your tablet CSS in here!
-}
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-    /*Insert your mobile CSS in here!*/
-}
 */
