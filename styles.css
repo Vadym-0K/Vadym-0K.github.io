@@ -57,8 +57,6 @@
 
 /* --------------------------- */
 
-/* TODO add nav bar and extandable icons prob */
-
 .icon {
      display: inline-block;
      margin: 15px;
@@ -77,8 +75,21 @@
      border: 5px solid #36e64f;
 }
 
-/* --------------------------- */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: #555;
+}
 /* SCREENS */
 
 #profile_picture
@@ -131,7 +142,7 @@ ul
   overflow: hidden;
   /* margin: auto; */
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #292b29;
   position:fixed;
   top: 0;
@@ -174,9 +185,8 @@ html
      background-size: cover;
      background-attachment: fixed;
      backface-visibility: visible;
+     font: 1.3em Monaco,"Source Code Pro",monospace
 }
-
-p { font: 1.3em Monaco,"Source Code Pro",monospace }
 
 h1
 {

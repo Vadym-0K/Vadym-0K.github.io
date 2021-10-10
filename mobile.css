@@ -25,75 +25,20 @@
           margin: auto;
      }
 
-     p { font: 15px Monaco,"Source Code Pro",monospace }
-     h1 { font: 20px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; font-weight: bold;}
-     li a{font-size: 10px;}
-     #mainPicture {
-          display: block;
+     .icons
+     {
+          width: 200px;
           margin: auto;
-          height: 800px ;
-          width: 480px auto;
-     }
-     #icons {
-          display:block;
-          margin: 15px;
-          width: 30px;
-          height: 30px;
      }
 
-     #PGscreen2
-     {
-          id="mainPlayground";
-          display: none;
-          width: 100%;
-          background-color: #6283a8;
-          transition: all 5s ease-in;
-     }
+     html { font: 15px Monaco,"Source Code Pro",monospace }
+     h1 { font: 20px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; font-weight: bold;}
+     li a{font-size: 10px;}
+
 
      .button1
      {
-          display: inline-block;
-          margin: 30px auto;
           font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-     }
-     .button1:hover
-     {
-          display: inline-block;
-          margin: 30px auto;
-          font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-
-     }
-
-     textBackground {
-          height: 1000px auto;
-          width: 480px auto;
-     }
-
-     headerBackground {
-          height: 1000px auto;
-          width: 480px auto;
-     }
-
-     header_font {
-       width: 400px;
-       margin: auto;
-       font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-     }
-     mainFontGreen {
-       width: 400px;
-       margin: auto;
-       font: 25px Monaco,"Source Code Pro",monospace;
-     }
-     mainFontWhite {
-       width: 400px;
-       margin: auto;
-       font: 20px Monaco,"Source Code Pro",monospace;
-     }
-     mainFontWhiteT{
-       width: 400px;
-       margin: auto;
-       font: 20px Monaco,"Source Code Pro",monospace;
-       opacity: 0;
      }
 
 }
