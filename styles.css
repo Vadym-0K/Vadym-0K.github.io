@@ -169,6 +169,7 @@ a.active {
 html
 {
      scroll-behavior: smooth;
+     background-color: rgb(28, 60, 41);
      background-image: url(images/green_dark.png);
      background-size: cover;
      background-attachment: fixed;
