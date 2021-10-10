@@ -48,25 +48,33 @@
      padding: 2em;
 }
 
+.icons
+{
+     display: block;
+     width: 400px;
+     margin: auto;
+}
+
 /* --------------------------- */
 
 /* TODO add nav bar and extandable icons prob */
 
-.icons {
-     id = "icons";
-     display:inline-block;
+.icon {
+     display: inline-block;
      margin: 15px;
-
-     height: 5%;
+     height: 3em;
      border: none;
-     /* border-radius: 50%; */
-     float: right;
+     border-radius: 50%;
+     border: 5px solid #64c872;
+     background-color: white;
      opacity: 70%;
+     width: auto;
 }
 
-.icons:hover {
+.icon:hover {
      opacity: 100%;
-     height: 5.5%;
+     height: 3.3em;
+     border: 5px solid #36e64f;
 }
 
 /* --------------------------- */
@@ -114,12 +122,14 @@
 
 /* -------------------------------- */
 
+
 /* Navabar */
 
 ul
 {
   list-style-type: none;
-  margin: auto;
+  overflow: hidden;
+  /* margin: auto; */
   padding: 0;
   overflow: hidden;
   background-color: #292b29;
