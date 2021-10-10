@@ -80,7 +80,11 @@
 .icon {
      display: inline-block;
      margin: 15px;
+<<<<<<< HEAD
      height: 50px;
+=======
+     height: 3em;
+>>>>>>> 6d5bc583f2069f556d253377b11487bda7c944b7
      border-radius: 50%;
      border: 5px solid #64c872;
      background-color: white;
@@ -90,7 +94,11 @@
 
 .icon:hover {
      opacity: 100%;
+<<<<<<< HEAD
      height: 3.2em;
+=======
+     height: 3.5em;
+>>>>>>> 6d5bc583f2069f556d253377b11487bda7c944b7
      border: 5px solid #36e64f;
 }
 /* collapsible */
@@ -136,11 +144,19 @@
   content: '\25be';
   font-size: 1em;
   float: right;
+<<<<<<< HEAD
 }
 
 .active:after {
   content: "\25b4";
 }
+=======
+}
+
+.active:after {
+  content: "\25b4";
+}
+>>>>>>> 6d5bc583f2069f556d253377b11487bda7c944b7
 /* ------------------------- */
 
 /* SCREENS */
