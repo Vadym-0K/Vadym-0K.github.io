@@ -234,10 +234,7 @@ a.active {
      font: 20px Monaco,"Source Code Pro",monospace;
      opacity: 0%;
 }
-p
-{
-     font: 20px Monaco,"Source Code Pro",monospace;
-}
+
 html
 {
      scroll-behavior: smooth;
