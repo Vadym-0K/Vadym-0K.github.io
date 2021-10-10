@@ -4,11 +4,17 @@
 }
 
 /* BOXES */
+.navbar
+{
+     display: block;
+     width: auto;
+     height: auto;
+}
 .welcome_header
 {
      display: block;
      width: 750px;
-     padding: 5em;
+     padding: 7em;
      box-sizing: border-box;
      margin: auto;
 }
@@ -30,6 +36,7 @@
      width: 100%;
      height: auto;
      padding: 1em;
+     border-bottom: 5px solid #2b5c32;
 }
 .text
 {
@@ -69,7 +76,7 @@
 #profile_picture
 {
      display: block;
-     width:7em;
+     width:50%;
      border: 3px solid #565b7d;
      border-radius: 50%;
      box-sizing: border-box;
@@ -107,6 +114,46 @@
 
 /* -------------------------------- */
 
+/* Navabar */
+
+ul
+{
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #292b29;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px solid #2b5c32;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  font: 15px Monaco,"Source Code Pro",monospace;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #5f8569;
+}
+
+a.active {
+  background-color: #36c93c;
+}
+
+/* ------------------ */
+
 /* STANDART STUFF */
 
 html
@@ -123,32 +170,24 @@ p { font: 1.3em Monaco,"Source Code Pro",monospace }
 h1
 {
      font: 3em Monaco,"Source Code Pro",monospace;
-     background: -webkit-linear-gradient(#a4ffaf, #7ea6ff);
+     /* background: -webkit-linear-gradient(#a4ffaf, #7ea6ff);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-     font-weight: bold;
+     font-weight: bold; */
 }
 
 a:link {
   color: #a3e3f0;
   background-color: transparent;
-  text-decoration: none;
 
 }
 a:visited {
-  color: #bda9d4;
+  color: #dfc3ff;
   background-color: transparent;
   text-decoration: none;
 }
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-
-}
 a:active {
-  color: yellow;
-  background-color: transparent;
+  color: #33f157;
   text-decoration: underline;
 }
 

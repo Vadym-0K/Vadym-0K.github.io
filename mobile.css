@@ -27,7 +27,7 @@
 
      p { font: 15px Monaco,"Source Code Pro",monospace }
      h1 { font: 20px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; font-weight: bold;}
-
+     li a{font-size: 10px;}
      #mainPicture {
           display: block;
           margin: auto;

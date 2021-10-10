@@ -11,6 +11,14 @@
      </head>
 
 <body>
+     <div class="navbar">
+          <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#aboutme">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contacts">Contacts</a></li>
+          </ul>
+     </div>
 
 <!--      TODO
           <a href="mailto:vadym.kharchenko@yahoo.com"><img src="icons/mail.png" border=5 class='icons'></i></a>
@@ -19,11 +27,11 @@
           <a href="https://discord.com/users/323590772060454923"><img src="icons/discord.png" border=5 class='icons'></i></a> -->
 
      <div class="welcome_header">
-          <h1>Hello World! I’m omniknight0101. This is my website! </h1>
+          <h1><mark class="white">Hello World! I’m <mark class="green">omniknight0101</mark>. This is my website! </mark></h1>
      </div>
 
      <div class="main_box">
-     <div class="subtitles">
+     <div class="subtitles" id="aboutme">
           <p><mark class="green">$ cat About_Me.txt</mark></p>
      </div>
 
@@ -39,12 +47,13 @@
                &nbsp;&nbsp;&nbsp;ASM<br>
      </div>
 
-     <div class="subtitles">
+     <div class="subtitles" id="projects">
           <p><mark class="green">$ cat Projects.txt</mark></p>
      </div>
 
      <div class="text">
           <p>
+               <!-- TODO Playground currently broken  -->
                <a href="playground.html"><b>* Playground</b></a>
                <mark class="l_orange"> - It's an experimantal page where I test new ideas and play with a code and layouts.</mark><br/>
                <br/>
@@ -59,7 +68,7 @@
      </div>
 
      <div class="subtitles">
-          <p><mark class="green">$ cat Contact_Informatin.txt</mark></p>
+          <p><mark class="green" id="contacts">$ cat Contact_Informatin.txt</mark></p>
      </div>
 
      <div class="text">
