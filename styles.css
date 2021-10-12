@@ -9,224 +9,6 @@
   src: url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);
 }
 
-
-/* BOXES */
-.navbar
-{
-     display: block;
-     width: auto;
-     height: auto;
-}
-/* TODO add to mobile */
-.welcome_header
-{
-     display: block;
-     width: 750px;
-     padding: 7em;
-     box-sizing: border-box;
-     margin: auto;
-}
-
-.main_box
-{
-     display: block;
-     width: 750px;
-     height: 55em auto;
-     border: 3px solid #40414a;
-     box-sizing: border-box;
-     margin: auto;
-}
-
-.playground_box
-{
-     display: block;
-     width: 750px;
-     height: 55em auto;
-     padding: 2em;
-     border: none;
-     box-sizing: border-box;
-     margin: auto;
-}
-.subtitles
-{
-     background-color: #181818;
-     box-sizing: border-box;
-     width: 100%;
-     height: auto;
-     padding: 1em;
-     border-bottom: 5px solid #2b5c32;
-}
-.text
-{
-     display: inline-block;
-     background-color: #2b2b2b;
-     box-sizing: border-box;
-     width: 100%;
-     height: auto;
-     padding: 2em;
-}
-
-.icons
-{
-     display: block;
-     width: 500px;
-     margin: auto;
-}
-
-/* --------------------------- */
-
-
-.icon {
-     display: inline-block;
-     margin: 15px;
-     height: 50px;
-     border-radius: 50%;
-     border: 5px solid #64c872;
-     background-color: white;
-     opacity: 70%;
-     width: auto;
-}
-
-.icon:hover {
-     opacity: 100%;
-     height: 3.2em;
-     border: 5px solid #36e64f;
-}
-/* collapsible */
-
-.content {
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;
-}
-
-.collapsible {
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: inherit;
-  font-family: inherit;
-  padding: 1em;
-  height: auto;
-}
-
-.collapsible.normal
-{
-     color: #92c6d9;
-     background-color: #2b2b2b;
-     border-bottom: 5px solid #597683;
-}
-.collapsible.medium
-{
-     color: #00ff44;
-     background-color: #181818;
-     border-bottom: 5px solid #2b5c32;
-     font: 20px Monaco,"Source Code Pro",monospace;
-}
-
-.active, .collapsible:hover {
-  background-color: #4c5060;
-}
-
-.collapsible:after {
-  content: '\25be';
-  font-size: 1em;
-  float: right;
-}
-
-.active:after {
-  content: "\25b4";
-}
-/* ------------------------- */
-
-/* SCREENS */
-
-#profile_picture
-{
-     display: block;
-     width:30%;
-     border: 3px solid #565b7d;
-     border-radius: 50%;
-     box-sizing: border-box;
-     padding: 0.5em;
-     margin-left: auto;
-     margin-right: auto;
-}
-
-#mainPlayground{
-     id="mainPlayground";
-     display: block;
-     height: 100%;
-     width: 100%;
-     background-color: black;
-}
-
-#PGscreen2
-{
-     id="mainPlayground";
-     display: none;
-     height: 100%;
-     width: 100%;
-     background-color: #6283a8;
-     transition: all 5s ease-in;
-}
-#boomscreen
-{
-     background-image: url(images/bomb.jpg);
-     background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
-     display: none;
-     height: 100%;
-}
-
-/* -------------------------------- */
-
-
-/* Navabar */
-
-ul
-{
-  list-style-type: none;
-  overflow: hidden;
-  /* margin: auto; */
-  padding: 0;
-  /* overflow: hidden; */
-  background-color: #292b29;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  border-bottom: 5px solid #2b5c32;
-}
-
-li
-{
-  float: left;
-}
-
-li a
-{
-  font: 15px Monaco,"Source Code Pro",monospace;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #5f8569;
-}
-
-a.active {
-  background-color: #36c93c;
-}
-
-/* ------------------ */
-
 /* STANDART STUFF */
 
 #transparent_font
@@ -235,7 +17,7 @@ a.active {
      opacity: 0%;
 }
 
-html
+body
 {
      scroll-behavior: smooth;
      background-color: #1c3c29;
@@ -305,6 +87,225 @@ mark.white
 }
 
 /* -------------------------------- */
+
+/* BOXES */
+.navbar
+{
+     display: block;
+     width: auto;
+     height: auto;
+}
+/* TODO add to mobile */
+.welcome_header
+{
+     display: block;
+     width: 750px;
+     padding: 7em;
+     box-sizing: border-box;
+     margin: auto;
+}
+
+.main_box
+{
+     display: block;
+     width: 750px;
+     height: 55em auto;
+     border: 3px solid #40414a;
+     box-sizing: border-box;
+     margin: auto;
+}
+
+.playground_box
+{
+     display: block;
+     width: 750px;
+     height: 55em auto;
+     padding: 2em;
+     border: none;
+     box-sizing: border-box;
+     margin: auto;
+}
+.subtitles
+{
+     background-color: #181818;
+     box-sizing: border-box;
+     width: 100%;
+     height: auto;
+     padding: 1em;
+     border-bottom: 5px solid #2b5c32;
+}
+.text
+{
+     display: inline-block;
+     background-color: #2b2b2b;
+     box-sizing: border-box;
+     width: 100%;
+     height: auto;
+     padding: 2em;
+}
+
+.icons
+{
+     display: block;
+     width: 500px;
+     margin: auto;
+}
+
+/* --------------------------- */
+
+
+/* SCREENS */
+
+#profile_picture
+{
+     display: block;
+     width:30%;
+     border: 3px solid #565b7d;
+     border-radius: 50%;
+     box-sizing: border-box;
+     padding: 0.5em;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+#mainPlayground{
+     id="mainPlayground";
+     display: block;
+     height: 100%;
+     width: 100%;
+     background-color: black;
+}
+
+#PGscreen2
+{
+     id="mainPlayground";
+     display: none;
+     height: 100%;
+     width: 100%;
+     background-color: #6283a8;
+     transition: all 5s ease-in;
+}
+#boomscreen
+{
+     background-image: url(images/bomb.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+     display: none;
+     height: 100%;
+}
+
+/* -------------------------------- */
+
+
+.icon {
+     display: inline-block;
+     margin: 15px;
+     height: 50px;
+     border-radius: 50%;
+     border: 5px solid #64c872;
+     background-color: white;
+     opacity: 70%;
+     width: auto;
+}
+
+.icon:hover {
+     opacity: 100%;
+     height: 3.2em;
+     border: 5px solid #36e64f;
+}
+/* collapsible */
+
+.content {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 1em;
+  height: auto;
+}
+
+.collapsible.normal
+{
+     color: #92c6d9;
+     background-color: #2b2b2b;
+     border-bottom: 5px solid #597683;
+}
+.collapsible.medium
+{
+     color: #00ff44;
+     background-color: #181818;
+     border-bottom: 5px solid #2b5c32;
+     font: 20px Monaco,"Source Code Pro",monospace;
+}
+
+.active, .collapsible:hover {
+  background-color: #4c5060;
+}
+
+.collapsible:after {
+  content: '\25be';
+  font-size: 1em;
+  float: right;
+}
+
+.active:after {
+  content: "\25b4";
+}
+/* ------------------------- */
+
+
+/* Navabar */
+
+ul
+{
+  list-style-type: none;
+  overflow: hidden;
+  /* margin: auto; */
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: #292b29;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px solid #2b5c32;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  font: 15px Monaco,"Source Code Pro",monospace;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #5f8569;
+}
+
+a.active {
+  background-color: #36c93c;
+}
+
+/* ------------------ */
+
 
 /*TODO BUTTON CHECK NEEDED FOR PROJECT */
 
