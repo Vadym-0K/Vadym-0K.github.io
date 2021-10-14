@@ -26,17 +26,17 @@ body
      background-attachment: fixed;
      backface-visibility: visible;
      font-family: source1;
-     font: 16px Monaco,"Source Code Pro",monospace;
+     font: 18px Monaco,"Source Code Pro",monospace;
      color:#e6edea;
 }
 
 h1
 {
-     font: 40px Monaco,"Source Code Pro",monospace;
-     /* background: -webkit-linear-gradient(#a4ffaf, #7ea6ff);
+     font: 60px Monaco,"Arial",monospace;
+     background: -webkit-linear-gradient(#42ff59, #517ee3);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-     font-weight: bold; */
+     font-weight: 1000;
 }
 
 h2
@@ -99,7 +99,7 @@ mark.white
 .welcome_header
 {
      display: block;
-     width: 750px;
+     width: 900px;
      padding: 7em;
      box-sizing: border-box;
      margin: auto;
@@ -113,6 +113,7 @@ mark.white
      border: 3px solid #40414a;
      box-sizing: border-box;
      margin: auto;
+     background-color: #2b2b2b;
 }
 
 .playground_box
@@ -137,13 +138,24 @@ mark.white
 .text
 {
      display: inline-block;
-     background-color: #2b2b2b;
      box-sizing: border-box;
      width: 100%;
      height: auto;
-     padding: 2em;
+     padding: 1em;
+     border-bottom: 5px solid #2b5c32;
+     line-height: 1.5;
 }
 
+.text2
+{
+     display: inline-block;
+     width: 50%;
+     height: auto;
+     padding: 2em;
+     box-sizing: border-box;
+     float:right;
+     line-height: 1.5;
+}
 .icons
 {
      display: block;
@@ -231,27 +243,18 @@ mark.white
   outline: none;
   font-size: inherit;
   font-family: inherit;
-  padding: 1em;
+  padding: 0.7em;
   height: auto;
-}
-
-.collapsible.normal
-{
-     color: #92c6d9;
-     background-color: #2b2b2b;
-     border-bottom: 5px solid #597683;
-}
-.collapsible.medium
-{
-     color: #00ff44;
-     background-color: #181818;
-     border-bottom: 5px solid #2b5c32;
-     font: 20px Monaco,"Source Code Pro",monospace;
+  background-color: #181818;
+  border-bottom: 5px solid #2b5c32;
+  color: rgb(46, 230, 53);
+  font: 20px Monaco,"Source Code Pro",monospace;
 }
 
 .active, .collapsible:hover {
-  background-color: #4c5060;
+  background-color: #3754ab;
 }
+
 
 .collapsible:after {
   content: '\25be';

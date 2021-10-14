@@ -29,7 +29,7 @@
           <h2><mark class="green">$ cat About_Me.txt</mark></h2>
      </div>
 
-     <button type="button" class="collapsible normal">>> Short Bio</button>
+     <button type="button" class="collapsible">^----- Short Bio</button>
      <div class="content">
           <div class="text">
                     My name is Vadym Kharchenko. I am originally from Ukraine. My family moved to the USA in 2014. I love the precision and certainty of Mathematics and the originality and expression of ART. I started learning Computer Science when I went to college. I then got my AA in Computer Science and transferred to a state university. I still find my field extremely interesting and addicting. I valued the most when I have to work on a problem for multiple hours and get my brains fried out; and I am lucky enough to have it still.<br/><br/>
@@ -38,16 +38,40 @@
           </div>
      </div>
 
-     <button type="button" class="collapsible normal">>> Skills</button>
+     <button type="button" class="collapsible">^------------- Skills</button>
      <div class="content">
           <div class="text">
-                    My main programming languages are:
-                    <br/>&nbsp;&nbsp;&nbsp;C++<br/>&nbsp;&nbsp;&nbsp;C<br/>&nbsp;&nbsp;&nbsp;Java<br/>
-                    &nbsp;&nbsp;&nbsp;ASM<br>
+                    List:
+          </div>
+          <div class="text">
+               /*-------------------Programming-Languages-----------------*/
+          </div>
+          <div class="text2">
+               <mark class="l_pink">I'm familial with:<br/><br/></mark>
+               Python<br/>
+               C#<br/>
+               JavaScript<br/>
+          </div>
+          <div class="text2">
+                    <mark class="l_pink">I'm comfortable with:<br/><br/></mark>
+                    C++<br/>
+                    C<br/>
+                    Java<br/>
+                    CSS/HTML<br/>
+                    ASM<br/>
+          </div>
+          <div class="text">
+               /*-------------------------Utilities------------------------*/<br/>
+          </div>
+          <div class="text">
+               Excel<br/>
+               Unix<br/>
+               Git<br/>
+               Libre Office (Calc)<br/>
           </div>
      </div>
 
-     <button type="button" class="collapsible medium" id="projects">$ cat Projects.txt</button>
+     <button type="button" class="collapsible" id="projects">$ cat Projects.txt</button>
 
      <div class="content">
           <div class="text">
@@ -64,7 +88,7 @@
           </div>
      </div>
 
-     <button type="button" class="collapsible medium" id="contacts">$ cat Contact_Informatin.txt</button>
+     <button type="button" class="collapsible" id="contacts">$ cat Contact_Informatin.txt</button>
      <div class="content">
           <div class="text">
                     <a href="mailto:vadym.kharchenko@yahoo.com">Email:</a> vadym.kharchenko@yahoo.com<br/>
@@ -88,15 +112,20 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+for (i = 0; i < coll.length; i++)
+{
+  coll[i].addEventListener("click", function()
+  {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight)
+    {
       content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
     }
+     else
+     {
+      content.style.maxHeight = content.scrollHeight + "px";
+     }
   });
 }
 </script>
