@@ -6,3 +6,4 @@ This is my first experience with CSS and html. I am learning a lot and changing 
 * Add some interesting formatting for media view.
 * Work on the calc project
 * Add page two for 'playground'
+* SVG animation
