@@ -36,8 +36,18 @@
 
      .icons
      {
-          width: 400px;
+          width: 300px auto;
           margin: auto;
+     }
+     .icon {
+          margin: 1em;
+          height: 25px;
+          border-radius: 50%;
+          width: auto;
+     }
+
+     .icon:hover {
+          height: 2em;
      }
 
      body { font: 15px Monaco,"Source Code Pro",monospace }
