@@ -42,7 +42,7 @@ h2{
      background-color: #ff0000;
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 479px)
 {
      body
      {
@@ -52,7 +52,7 @@ h2{
      {
           width: 400px auto;
           min-height: 40em;
-          display: inline-block;
+          display: block;
           height: 300px;
 
      }
