@@ -19,23 +19,21 @@
 
 body
 {
+     display: grid;
+     place-content: center;
      scroll-behavior: smooth;
-     background-color: #1c3c29;
-     background-image: url(images/green_dark.png);
-     background-size: cover;
-     background-attachment: fixed;
-     backface-visibility: visible;
+     text-rendering: optimizeSpeed;
+     line-height: 1.5;
+     background-color: #2d313a;
      font-family: source1;
      font: 18px Monaco,"Source Code Pro",monospace;
      color:#e6edea;
+
 }
 
 h1
 {
      font: 60px Monaco,"Arial",monospace;
-     background: -webkit-linear-gradient(#42ff59, #517ee3);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
      font-weight: 1000;
 }
 
@@ -61,23 +59,23 @@ a:active {
 
 mark.green
 {
-     color:#00ff44;
+     color:#51e779;
      background: none;
 }
 mark.red
 {
-     color:#e9773f;
+     color:#d35752;
      background: none;
 }
 mark.l_orange
 {
-     color:#ffad85;
+     color:#f0976b;
      background: none;
 }
 
 mark.l_pink
 {
-     color:#dc90de;
+     color:#f18cf5;
      background: none;
 }
 mark.white
@@ -85,56 +83,93 @@ mark.white
      color:#e6edea;
      background: none;
 }
+mark.grey
+{
+     color:#b3beba;
+     background: none;
+}
 
 /* -------------------------------- */
 
 /* BOXES */
-.navbar
-{
-     display: block;
-     width: auto;
-     height: auto;
-}
+
 /* TODO add to mobile */
-.welcome_header
-{
-     display: block;
-     width: 900px;
-     padding: 7em;
-     box-sizing: border-box;
-     margin: auto;
-}
 
 .main_box
 {
      display: block;
-     width: 750px;
+     width: 100%;
      height: 55em auto;
      border: 3px solid #40414a;
      box-sizing: border-box;
      margin: auto;
-     background-color: #2b2b2b;
+     background-color: #313d44;
 }
 
-.playground_box
-{
-     display: block;
-     width: 750px;
-     height: 55em auto;
-     padding: 2em;
-     border: none;
-     box-sizing: border-box;
-     margin: auto;
-}
+.flex {
+     display: flex;
+     gap: var(--gap, 1rem);
+   }
+
 .subtitles
 {
-     background-color: #181818;
+     background-color: #3d4650;
      box-sizing: border-box;
      width: 100%;
      height: auto;
      padding: 1em;
-     border-bottom: 5px solid #2b5c32;
+     /* border-bottom: 5px solid #2b5c32; */
 }
+
+.testimonial-grid {
+     display: grid;
+     gap: 1.5rem;
+     grid-template-columns: repeat(2, 1fr);
+     padding-block: 2rem;
+     width: min(95%, 70rem); 
+     grid-template-areas:
+          'one'
+          'two'
+          'three'
+          'four'
+          'five';
+     margin-inline: auto;
+}    
+.testimonial {
+     font-size: var(--fs-400);
+     /* padding: 2rem; */
+     /* border-radius: 0.5rem; */
+     box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+   }
+.testimonial :last-child {
+     grid-column: 4;
+}
+.testimonial :nth-child(1) {
+     grid-area: one;
+   }
+.testimonial :nth-child(2) {
+     grid-area: two;
+   }
+.testimonial :nth-child(3) {
+     grid-area: three;
+   }
+.testimonial :nth-child(4) {
+     grid-area: four;
+   }
+.testimonial :nth-child(5) {
+     grid-area: five;
+   }
+
+
+.grid-col-span-2 
+{
+     grid-column: span 2; 
+}
+.grid-col-span-3 
+{
+     grid-column: span 3; 
+}
+
 .text
 {
      display: inline-block;
@@ -142,7 +177,7 @@ mark.white
      width: 100%;
      height: auto;
      padding: 1em;
-     border-bottom: 5px solid #2b5c32;
+     /* border-bottom: 5px solid #2b5c32; */
      line-height: 1.5;
 }
 
@@ -153,16 +188,11 @@ mark.white
      height: auto;
      padding: 2em;
      box-sizing: border-box;
-     float:right;
+     /* float: right; */
      line-height: 1.5;
 }
-.icons
-{
-     display: block;
-     width: 500px;
-     height: auto;
-     margin: auto;
-}
+
+
 
 /* --------------------------- */
 
@@ -172,7 +202,7 @@ mark.white
 #profile_picture
 {
      display: block;
-     width:30%;
+     width:10rem;
      border: 3px solid #565b7d;
      border-radius: 50%;
      box-sizing: border-box;
@@ -181,292 +211,4 @@ mark.white
      margin-right: auto;
 }
 
-#mainPlayground{
-     id="mainPlayground";
-     display: block;
-     height: 100%;
-     width: 100%;
-     background-color: black;
-}
-
-#PGscreen2
-{
-     id="mainPlayground";
-     display: none;
-     height: 100%;
-     width: 100%;
-     background-color: #6283a8;
-     transition: all 5s ease-in;
-}
-#boomscreen
-{
-     background-image: url(images/bomb.jpg);
-     background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
-     display: none;
-     height: 100%;
-}
-
 /* -------------------------------- */
-
-
-.icon {
-     display: inline-block;
-     margin: 15px;
-     height: 50px;
-     border-radius: 50%;
-     border: 5px solid #64c872;
-     background-color: white;
-     opacity: 70%;
-     width: auto;
-}
-
-.icon:hover {
-     opacity: 100%;
-     height: 3.2em;
-     border: 5px solid #36e64f;
-}
-/* collapsible */
-
-.content {
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;
-}
-
-.collapsible {
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: inherit;
-  font-family: inherit;
-  padding: 0.7em;
-  height: auto;
-  background-color: #181818;
-  border-bottom: 5px solid #2b5c32;
-  color: rgb(46, 230, 53);
-  font: 20px Monaco,"Source Code Pro",monospace;
-}
-
-.active, .collapsible:hover {
-  background-color: #3754ab;
-}
-
-
-.collapsible:after {
-  content: '\25be';
-  font-size: 1em;
-  float: right;
-}
-
-.active:after {
-  content: "\25b4";
-}
-/* ------------------------- */
-
-
-/* Navabar */
-
-ul
-{
-  list-style-type: none;
-  overflow: hidden;
-  /* margin: auto; */
-  padding: 0;
-  /* overflow: hidden; */
-  background-color: #292b29;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  border-bottom: 5px solid #2b5c32;
-}
-
-li
-{
-  float: left;
-}
-
-li a
-{
-  font: 15px Monaco,"Source Code Pro",monospace;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #5f8569;
-}
-
-a.active {
-  background-color: #36c93c;
-}
-
-/* ------------------ */
-
-
-/*TODO BUTTON CHECK NEEDED FOR PROJECT */
-
-.button1
-{
-     background: none;
-     border: none;
-     display: inline-block;
-     cursor: pointer;
-     margin: 30px auto;
-     color: #00fe29;
-}
-
-.button1:hover
-{
-     color: #65e6f7;
-}
-.button2
-{
-     background-color: linear-gradient(90deg, #7da0db, #00ff44);
-     background-clip: text;
-     color: transparent;
-     cursor: pointer;
-     width: 100%;
-     height: 100%;
-     border: none;
-}
-.button2:hover
-{
-     color: red;
-}
-#full_screen_button
-{
-     background-color: linear-gradient(90deg, #7da0db, #00ff44);
-     background-clip: text;
-     color: transparent;
-     font: 25px Monaco,"Source Code Pro",monospace;
-     font-weight: bold;
-     cursor: pointer;
-     width: 100%;
-     height: 100%;
-     border: none;
-}
-.button4 {
-     align-self: center;
-     background-color: transparent 100%;
-     height: auto;
-     width: auto;
-     color: #48567e;
-     font: 25px Monaco,"Source Code Pro",monospace;
-
-}
-
-.button5 {
-     /* align-self: center; */
-     display:contents;
-     background-color: transparent 100%;
-     height: 100%;
-     width: 100%;
-     cursor: pointer;
-}
-
-/* -------------------------------- */
-
-
-/* ANIMATION FOR DO_NOT_CLICK */
-
-.fade-in-text1 {
-  display: block;
-  animation: fadeIn linear 3s ;
-     -webkit-animation: fadeIn linear 3s;
-     -moz-animation: fadeIn linear 2s;
-     -o-animation: fadeIn linear 2s;
-     -ms-animation: fadeIn linear 2s;
-     animation-fill-mode: forwards;
-}
-.fade-in-text2 {
-  display: block;
-  animation: fadeIn linear 3s ;
-     -webkit-animation: fadeIn linear 3s;
-     -moz-animation: fadeIn linear 3s;
-     -o-animation: fadeIn linear 3s;
-     -ms-animation: fadeIn linear 3s;
-     animation-fill-mode: forwards;
-     animation-delay: 2s;
-}
-.fade-in-text3 {
-  display: block;
-  animation: fadeIn linear 3s ;
-     -webkit-animation: fadeIn linear 3s;
-     -moz-animation: fadeIn linear 3s;
-     -o-animation: fadeIn linear 3s;
-     -ms-animation: fadeIn linear 3s;
-     animation-fill-mode: forwards;
-     animation-delay: 4s;
-}
-.fade-in-text4 {
-  display: block;
-  animation: fadeIn linear 3s ;
-     -webkit-animation: fadeIn linear 3s;
-     -moz-animation: fadeIn linear 3s;
-     -o-animation: fadeIn linear 3s;
-     -ms-animation: fadeIn linear 3s;
-     animation-fill-mode: forwards;
-     animation-delay: 6s;
-}
-.fade-in-text5 {
-  display: block;
-  animation: fadeIn linear 3s ;
-     -webkit-animation: fadeIn linear 3s;
-     -moz-animation: fadeIn linear 3s;
-     -o-animation: fadeIn linear 3s;
-     -ms-animation: fadeIn linear 3s;
-     animation-fill-mode: forwards;
-     animation-delay: 8s;
-}
-.fade-in-button {
-  display: block;
-  animation: fadeIn linear 3s ;
-     -webkit-animation: fadeIn linear 3s;
-     -moz-animation: fadeIn linear 3s;
-     -o-animation: fadeIn linear 3s;
-     -ms-animation: fadeIn linear 3s;
-     animation-fill-mode: forwards;
-     animation-delay: 10s;
-     opacity: 0;
-     height: auto;
-     width: auto;
-     color: #48567e;
-     font-size: 25px;
-     font-family: source1;
-}
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-/* -------------------------------- */
-
-*/
