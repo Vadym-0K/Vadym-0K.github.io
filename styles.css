@@ -19,7 +19,7 @@
 
 body
 {
-     display: grid;
+
      place-content: center;
      scroll-behavior: smooth;
      text-rendering: optimizeSpeed;
@@ -97,7 +97,6 @@ mark.grey
 
 .main_box
 {
-     display: block;
      width: 100%;
      height: 55em auto;
      border: 3px solid #40414a;
@@ -210,5 +209,9 @@ mark.grey
      margin-left: auto;
      margin-right: auto;
 }
-
+@media (max-width: 767px) {
+     .testimonial-grid {
+          display: block;
+     }
+}
 /* -------------------------------- */
