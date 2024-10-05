@@ -1,6 +1,4 @@
 # Portfolio Website
-## Vadym-0K.github.io
-### Preview
 <p align="center">
 <img alt="image" src="project-4.png"/>
 </p>
